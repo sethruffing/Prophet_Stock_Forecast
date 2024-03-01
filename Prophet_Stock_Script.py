@@ -67,7 +67,7 @@ def main():
         st.write("Below is the data produced by the forecast from Prophet. To save the data to a CSV, hover over the top right corner of the data, and click the download button.")
         st.write(forecast)
 
-
-
+        st.write()
+        st.write('This Streamlit Web App was developed by Seth Ruffing (TAMU Class of 2023) and Carter Powell (TAMU Class of 2024)')
 if __name__ == "__main__":
     main()
