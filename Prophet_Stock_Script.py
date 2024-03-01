@@ -15,7 +15,7 @@ def main():
     st.write()
     st.write('This Streamlit Web App was developed by Seth Ruffing (TAMU Class of 2023) and Carter Powell (TAMU Class of 2024)')
     # ENTER STOCK TICKER
-    ticker = st.text_input('Enter Stock Ticker', 'SPY')
+    ticker = st.text_input('Enter Stock Ticker (IN ALL CAPS)', 'SPY')
     ticker = str(ticker)
     # Text input box for the start date
     start_date = st.text_input('Enter Start Date with YYYY-MM-DD format', '2000-01-01')
