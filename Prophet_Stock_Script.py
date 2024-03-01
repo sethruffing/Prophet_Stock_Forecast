@@ -12,7 +12,8 @@ def main():
 
     # Add some text
     st.write('Use the Prophet model by Meta to forecast stocks. Note that the model is highly dependent on the data it is trained on, so pick start and end dates that will give the model unbiased data. The training data comes from the Yahoo Finance API and the forecasted data comes from Prophet by Meta.')
-
+    st.write()
+    st.write('This Streamlit Web App was developed by Seth Ruffing (TAMU Class of 2023) and Carter Powell (TAMU Class of 2024)')
     # ENTER STOCK TICKER
     ticker = st.text_input('Enter Stock Ticker', 'SPY')
     ticker = str(ticker)
@@ -67,7 +68,6 @@ def main():
         st.write("Below is the data produced by the forecast from Prophet. To save the data to a CSV, hover over the top right corner of the data, and click the download button.")
         st.write(forecast)
 
-        st.write()
-        st.write('This Streamlit Web App was developed by Seth Ruffing (TAMU Class of 2023) and Carter Powell (TAMU Class of 2024)')
+
 if __name__ == "__main__":
     main()
